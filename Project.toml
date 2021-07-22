@@ -1,5 +1,5 @@
 name = "VerifyDNN"
-uuid = ""fec4b3b0-8aba-42d7-8198-daa21f42ea54""
+uuid = "fec4b3b0-8aba-42d7-8198-daa21f42ea54"
 
 [deps]
 CDDLib = "3391f64e-dcde-5f30-b752-e11513730f60"

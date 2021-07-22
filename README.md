@@ -2,7 +2,7 @@
 Installation
 ------------
 ```
-add https://github.com/sisl/VerifyDNN.jl
+add https://github.com/shchae7/VerifyDNN.jl
 
 # Add dependencies
 add LazySets
