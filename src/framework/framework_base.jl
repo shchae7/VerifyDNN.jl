@@ -28,9 +28,7 @@ function solve(solver::Verifier, problem::Problem)
             return result
         elseif result.status === :unknown
             subdomains = node_split_refinement(problem.network, reach, domain_list, solver.node_split_select_heuristic)
-            for domain in subdomains
-
-            end
+            add_subdomains!(subdomains, domain_list)
         end
 
         isempty(domain_list) && return CounterExampleResult(:holds)

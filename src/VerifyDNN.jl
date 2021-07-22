@@ -78,6 +78,11 @@ include("reachability/neurify.jl")
 export ReluVal, Neurify
 
 
+#include("framework/framework_base.jl")
+#export Verifier
+include("framework/creluval.jl")
+export CReluVal
+
 const TOL = Ref(sqrt(eps()))
 set_tolerance(x::Real) = (TOL[] = x)
 export set_tolerance
