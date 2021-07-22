@@ -18,7 +18,7 @@ function solve(solver::CReluVal, problem::Problem)
         end
 
         # Propagate input
-        reach = forward_network(solver, problem.network, domain)
+        reach = forward_network(solver, problem.network, init_symbolic_mask(domain))
 
         # Check satisfiability of current domain
         result = check_satisfiability(solver, reach, problem.network, problem.output)
