@@ -2,8 +2,8 @@
     max_iter::Int64 = 100
     optimizer = GLPK.Optimizer
 
-    node_split_select_heuristic = :DFS
-    domain_select_heuristic = :NAIVE
+    node_split_select_heuristic = :NAIVE
+    domain_select_heuristic = :DFS
 end
 
 function solve(solver::CReluVal, problem::Problem)
